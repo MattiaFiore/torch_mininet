@@ -1,0 +1,36 @@
+Warning: you requested the nanomsg event logger, but bmv2 was compiled without -DBMELOG, and the event logger cannot be activated
+Calling target program-options parser
+[18:18:35.147] [bmv2] [D] [thread 864888] Set default default entry for table 'MyIngress.forward': NoAction - 
+Adding interface s1-eth1 as port 1
+[18:18:35.148] [bmv2] [D] [thread 864888] Adding interface s1-eth1 as port 1
+Adding interface s1-eth2 as port 2
+[18:18:35.227] [bmv2] [D] [thread 864888] Adding interface s1-eth2 as port 2
+Adding interface s1-eth3 as port 3
+[18:18:35.295] [bmv2] [D] [thread 864888] Adding interface s1-eth3 as port 3
+[18:18:35.347] [bmv2] [I] [thread 864888] Starting Thrift server on port 9090
+[18:18:35.347] [bmv2] [I] [thread 864888] Thrift server was started
+[18:18:35.426] [bmv2] [T] [thread 864931] bm_get_config
+[18:18:35.427] [bmv2] [T] [thread 864931] bm_table_add_entry
+[18:18:35.427] [bmv2] [D] [thread 864931] Entry 0 added to table 'MyIngress.forward'
+[18:18:35.427] [bmv2] [D] [thread 864931] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : EXACT     0a000000
+Action entry: MyIngress.send - 1,
+
+[18:18:35.428] [bmv2] [T] [thread 864931] bm_table_add_entry
+[18:18:35.428] [bmv2] [D] [thread 864931] Entry 1 added to table 'MyIngress.forward'
+[18:18:35.428] [bmv2] [D] [thread 864931] Dumping entry 1
+Match key:
+* hdr.ipv4.dstAddr    : EXACT     0a000001
+Action entry: MyIngress.send - 2,
+
+[18:18:35.428] [bmv2] [T] [thread 864931] bm_table_add_entry
+[18:18:35.428] [bmv2] [D] [thread 864931] Entry 2 added to table 'MyIngress.forward'
+[18:18:35.428] [bmv2] [D] [thread 864931] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : EXACT     0a000002
+Action entry: MyIngress.send - 3,
+
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
